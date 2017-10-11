@@ -3,11 +3,12 @@ import Messages from './components/Messages'
 import data from './data/messages'
 import './App.css';
 
+
 class App extends Component {
   render() {
     return (
       <div>
-        <Messages messages={data} />
+        {data.map((messages) => <Messages messages={data}/>)}
       </div>
     );
   }

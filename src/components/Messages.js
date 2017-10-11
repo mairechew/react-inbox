@@ -1,7 +1,12 @@
 import React from 'react'
 
+
 const Messages = (props) => {
-  // console.log(props.messages)
+  console.log(props.messages)
+  var messages = props.messages[0].subject
+  // var messageList = messages.map(function(message){
+    // return
+  // })
   return (
     <div className="row message unread">
       <div className="col-xs-1">
@@ -16,12 +21,11 @@ const Messages = (props) => {
       </div>
       <div className="col-xs-11">
         <a href="#">
-          Here is some message text that has a bunch of stuff
+          {messages}
         </a>
       </div>
     </div>
   )
 }
-
 
 export default Messages
